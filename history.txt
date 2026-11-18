@@ -1,0 +1,156 @@
+Монгуш Полины Ильиничны
+11ИСП-241
+
+22.10
+Добавление метатегов
+-  <link rel="canonical" href="index.html">
+-  <meta name="description" content="">
+-  мета-тегои open graph (title, description, image)
+-  <link rel="icon" href="img/icon.ico.png">
+-  <meta name="robots" content="index, follow"> 
+
+
+23.10
+- Добавлена и написана страница catalog.html
+- Добавлен тег article на страницу index.html
+- Подключены шрифты:
+   Ubuntu-Light - для основго текста
+   STRomeTrial-Medium - для заголовков
+- Добавлены контакты в подвал
+- Настроен коллаж на странице портфолио
+- Добавлен слоган в шапку сайта
+
+29.10
+- Уточнение ЦА
+
+05.11
+- Добавлено 3 open graph
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <meta property="og:locale" content="ru_RU">
+- Добавлен ld-json
+
+
+1. Целевая аудитория:
+  Молодые люди 20-30 лет, проживающие в Санкт-Петербурге и предпочитающие эстетику с персонализацию. 
+  Потребность - быстро и легко найти торт в качестве подарка, поэтому чаще продукт нужен в кратчайшие сроки. 
+  Средний чек 1000-2500 рублей. активные пользователи соц сетей, принимают решения на основе визуального контента
+  Социально-демографические: 
+    - Пол пользователя: преимущественно женщины 80%, мужчины 20%
+    - Пол покупателя (кому покупают): не важен
+    - Возвраст: 20-30 лет
+    - Уровень дохода: средний или выше среднего
+  Географические:
+    - Жители СПБ
+    - Преимущественно центральные районы города
+    - Формат доставки: самовывоз или доставка
+  Психографические:
+    - Ценности: эстетика, персонализация, внимание к деталям, качество продуктов
+    - Мотивация покупки: желание сделать подарок
+  Поведенческие:
+    - Частота покупок: по случаю (дни рождения, корпоративы, свидания, праздники)
+    - Как находят: социальные сети, поиск в интернете
+    - Критерии выбора: скорость изготовления, визуальная привлекательность, персонализация
+    - Барьеры: страх получить некачественный продукт, переживания о сроках доставки
+    - Лояльность: при положительном опыте готовы рекомендовать друзьям и возвращаться
+
+  Приемы для ЦА:
+  1. Пастельная цветовая палитра. Создание ощущения элегантности, премиальности и направленности на клиента
+  2. Шрифт STRomeTrial с засечками для заголовков. Создание эстетики, ощущения направленности на клиента, элегентности и премиум сегмента
+  3. Шрифт Ubuntu для основного текста. Выбран для улучшения читабельности и создания контраста на фоне заголовков с засечками
+  4. Слоган - "Трудно сказать, но легко съесть!"
+  5. Коллаж на странице портфолио
+  6. Качественная графика на странице портфолио
+  7. Соцсети - ВК и Телеграм
+  8. УТП на главной странице (секция "Почему стоит выбрать нас?")
+
+
+2. Семантические теги:
+  1. <header> - index.html, order.html, contacts.html, portfolio.html, about.html, catalog.html
+  2. <nav> - index.html, order.html, contacts.html, portfolio.html, about.html, catalog.html
+  3. <main> - index.html, order.html, contacts.html, portfolio.html, about.html, catalog.html
+  4. <section> - index.html, order.html, contacts.html, portfolio.html, about.html, catalog.html
+  5. <footer> - index.html, order.html, contacts.html, portfolio.html, about.html, catalog.html
+  6. <article> - index.html
+
+3. Мета-теги и теги блока head
+  На всех страницах стандартный набор мета-тегов:
+    charset="UTF-8"
+    name="viewport" content="width=device-width, initial-scale=1.0"
+    name="robots" content="index, follow"
+    name="description" content="уникальное описание"
+    property="og:title" content="уникальное название для open graph"
+    property="og:description" content="уникальное описание для open graph" 
+    property="og:image" content="картинка для open graph"
+    <title>Название страницы</title>
+    <link rel="icon" href="img/icon.ico.png">
+
+    Для всех страниц кроме catalog.html:
+    <link rel="canonical" href="ссылка на саму себя">
+
+    для catalog.html 
+    <link rel="canonical" href="portfolio.html">
+
+4. Шрифты
+  1. STRomeTrial-Medium — для заголовков, навигации и кнопкам
+   - Способ подключения: через style.css @font-face 
+   - Источник: fonts Google 
+
+  2. Ubuntu-Light — для основного текста (параграфы, списки, формы, кнопки)
+   - Способ подключения: через style.css @font-face 
+   - Источник: fonts Google
+
+5. Валидация
+  html и css код валиден
+
+6. микроразметка
+  -  наличие open graph тегов:
+    property="og:title" content="уникальное название для open graph"
+    property="og:description" content="уникальное описание для open graph" 
+    property="og:image" content="картинка для open graph"
+    property="og:type" content="website"
+    property="og:url" content="index.html"
+    property="og:locale" content="ru_RU"
+  - настроен ld-json:
+      <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Bakery",
+            "name": "Бенто торты",
+            "description": "Персональные бенто-торты на заказ в Санкт-Петербурге с доставкой",
+            "url": "https://yoursite.ru",
+            "telephone": "+7-999-123-45-67",
+            "email": "cakethebestSPB@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Санкт-Петербург",
+                "addressCountry": "RU"
+            },
+            "priceRange": "1000-2500 RUB",
+            "openingHours": "Mo-Su 10:00-20:00"
+            }
+        </script>
+  - Проверка в Schema.org - отображается корректно
+  - Проверка стилей в CanIUse - все свойства >95%2
+  - 
+
+7. Кроссбраузерность и кроссплатформенность  (прилагать скрину в ворде)
+  - 
+  -
+
+8. Семантическое ядро
+  -
+  -
+
+что хочет аудитория, подбиваем интент под аудиторию, подбиваем СЯ под этот интент
+на сайте в альтах или изображения долэны быть фразы из СЯ, в description, заголовки и тп и тд
+
+
+ДОБАВИТЬ МИКРОДАННЫЕ itemscope. itemtype
+
+Семантическое ядро на чисточастотные и высокочастотные запросы 
+по каким запросам анализировали запросы,, скриншоты из вордсата, контент отформатированный по тому, что увидела в вордстате
+
+
+
+
