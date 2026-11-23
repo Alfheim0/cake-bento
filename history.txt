@@ -1,6 +1,11 @@
 Монгуш Полины Ильиничны
 11ИСП-241
 
+для гита:
+git add .
+git commit -m ""
+git push
+
 22.10
 Добавление метатегов
 -  <link rel="canonical" href="index.html">
@@ -29,6 +34,12 @@
     <meta property="og:url" content="index.html">
     <meta property="og:locale" content="ru_RU">
 - Добавлен ld-json
+
+13.11
+- Добавлены микроданные itemscope, itemtype и itemprop
+
+23.11
+- Добавлена адаптивность под телефоны и планшеты
 
 
 1. Целевая аудитория:
@@ -130,9 +141,14 @@
             "openingHours": "Mo-Su 10:00-20:00"
             }
         </script>
-  - Проверка в Schema.org - отображается корректно
-  - Проверка стилей в CanIUse - все свойства >95%2
-  - 
+  - внедрены микроданные:
+    itemscope itemtype="https://schema.org/ImageObject"
+    itemprop="contentUrl"
+    itemscope itemtype="https://schema.org/Product"
+    itemprop="name"
+    itemprop="description"
+    itemprop="email"
+    itemprop="telephone"
 
 7. Кроссбраузерность и кроссплатформенность  (прилагать скрину в ворде)
   - 
@@ -153,4 +169,6 @@
 
 
 
+GEO: создать файл llms.txt - прописать что туда относится
 
+тригеры доверия: контакты, политика конфедициальности, усилить главную страницу (счетчики???), 
